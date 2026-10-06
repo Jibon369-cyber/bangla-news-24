@@ -22,7 +22,7 @@ const handleSubmit = async (e: React.SubmitEvent<HTMLElement>) => {
     }
 
     if(error) {
-      toast.error(error.message);
+      toast.error(error?.message ?? "Something went wrong");
     }
 
   }
